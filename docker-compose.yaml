@@ -3,7 +3,7 @@ services:
   app:
     image: johannesjo/super-productivity:latest
     ports:
-      - '8080:80'
+      - '8091:80'
     environment:
       # Pre-configured defaults for easier setup
       WEBDAV_BASE_URL: ${WEBDAV_BASE_URL:-http://localhost:2345/}
