@@ -2,8 +2,8 @@ services:
   # Super Productivity app
   app:
     image: johannesjo/super-productivity:latest
-    ports:
-      - '8091:80'
+    #ports:
+    #  - '8091:80'
     networks:
       - super
       - frontend
@@ -35,8 +35,8 @@ services:
   # WebDAV sync server
   webdav:
     image: hacdias/webdav:latest
-    ports:
-      - '2345:2345'
+    #ports:
+    #  - '2345:2345'
     volumes:
       - ./webdav.yaml:/config.yml:ro
       - webdav_data:/data
