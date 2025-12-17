@@ -22,7 +22,7 @@ services:
       # Pass the host header
       - "traefik.http.services.super_productivity-svc.loadbalancer.passhostheader=true"
       ## Middlewares
-      #- "traefik.http.routers.super_productivity-rtr.middlewares=authentik-auth@file" 
+      - "traefik.http.routers.super_productivity-rtr.middlewares=authentik-auth@file" 
     environment:
       # Pre-configured defaults for easier setup
       WEBDAV_BASE_URL: ${WEBDAV_BASE_URL:-http://localhost:2345/}
