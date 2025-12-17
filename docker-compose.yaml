@@ -18,7 +18,7 @@ services:
       # Map the router to the 'web' entry point
       - "traefik.http.routers.super_productivity-rtr.entrypoints=web"
       # Define the service port (the port the application uses internally)
-      - "traefik.http.services.super_productivity-svc.loadbalancer.server.port=80"
+      - "traefik.http.services.super_productivity-svc.loadbalancer.server.port=8091"
       # Pass the host header
       - "traefik.http.services.super_productivity-svc.loadbalancer.passhostheader=true"
       ## Middlewares
